@@ -1,7 +1,7 @@
 export default defineAppConfig({
   alpine: {
-    title: 'Alpine',
-    description: 'The minimalist blog theme',
+    title: 'BunnyBit Blog',
+    description: '你幫我~我邦尼~',
     image: {
       src: '/social-card-preview.png',
       alt: 'An image showcasing my project.',
@@ -13,7 +13,7 @@ export default defineAppConfig({
       logo: {
         path: '/logo.svg', // path of the logo
         pathDark: '/logo-dark.svg', // path of the logo in dark mode, leave this empty if you want to use the same logo
-        alt: 'alpine' // alt of the logo
+        alt: 'BunnyBit' // alt of the logo
       }
     },
     footer: {
@@ -26,13 +26,19 @@ export default defineAppConfig({
       message: 'Follow me on' // string that will be displayed in the footer (leave empty or delete to disable)
     },
     socials: {
-      twitter: 'nuxtlabs',
-      instagram: 'atinuxt',
+      twitter: 'bunnybit0121',
+      instagram: 'bunnybit0121',
       linkedin: {
         icon: 'uil:linkedin',
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/company/nuxtlabs'
-      }
+        href: 'https://www.linkedin.com/in/bunnybit/'
+      },
+      github: 'et84121',
+      'medium-blog': {
+        icon: 'uil:medium-m',
+        label: 'Medium',
+        href: 'https://medium.com/@bunnybit'
+      },
     },
     form: {
       successMessage: 'Message sent. Thank you!'

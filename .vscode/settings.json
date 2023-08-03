@@ -1,0 +1,6 @@
+{
+    "markdown.copyFiles.destination": {
+        "content/articles/*.md": "${documentWorkspaceFolder}/public/articles/${documentBaseName}/${fileName}",
+        "content/*.md": "${documentWorkspaceFolder}/public/${documentBaseName}/${fileName}"
+    }
+}
