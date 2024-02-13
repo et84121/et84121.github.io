@@ -8,6 +8,9 @@ devDependencies:
   '@nuxt-themes/alpine':
     specifier: ^1.6.5
     version: 1.6.5(nuxt@3.10.1)(postcss@8.4.35)(rollup@3.29.4)(vue@3.4.18)
+  '@nuxthq/studio':
+    specifier: ^1.0.10
+    version: 1.0.10(rollup@3.29.4)
   nuxt:
     specifier: ^3.10.1
     version: 3.10.1(rollup@3.29.4)(typescript@5.3.3)(vite@5.1.1)
@@ -72,16 +75,6 @@ packages:
       jsesc: 2.5.2
     dev: true
 
-  /@babel/generator@7.23.0:
-    resolution: {integrity: sha512-lN85QRR+5IbYrMWM6Y4pE/noaQtg4pNiqeNGX60eqOfo6gtEj6uw/JagelB8vVztSd7R6M5n1+PQkDbHbBRU4g==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.23.0
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.18
-      jsesc: 2.5.2
-    dev: true
-
   /@babel/helper-annotate-as-pure@7.22.5:
     resolution: {integrity: sha512-LvBTxu8bQSQkcyKOU+a1btnNFQ1dMAd0R6PyW3arXes06F6QLWLIrd681bxRPIXlrMGR3XYnW9JyML7dP3qgxg==}
     engines: {node: '>=6.9.0'}
@@ -129,14 +122,6 @@ packages:
     dependencies:
       '@babel/template': 7.23.9
       '@babel/types': 7.23.9
-    dev: true
-
-  /@babel/helper-function-name@7.23.0:
-    resolution: {integrity: sha512-OErEqsrxjZTJciZ4Oo+eoZqeW9UIiOcuYKRJA4ZAgV9myA+pOXhhmpfNCKjEH/auVfEYVFJ6y1Tc4r0eIApqiw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/template': 7.22.15
-      '@babel/types': 7.23.0
     dev: true
 
   /@babel/helper-hoist-variables@7.22.5:
@@ -1621,6 +1606,22 @@ packages:
       - utf-8-validate
     dev: true
 
+  /@nuxthq/studio@1.0.10(rollup@3.29.4):
+    resolution: {integrity: sha512-F0Gd4H/YfsVorg0EZ5+++/pG7WC8S9jvWg4CNQH0ZZXCcqFE6cSvxExtkfjJEDLEswp2OYLF8tCSkrYVQsFQqQ==}
+    dependencies:
+      '@nuxt/kit': 3.10.1(rollup@3.29.4)
+      defu: 6.1.4
+      nuxt-component-meta: 0.6.3(rollup@3.29.4)
+      socket.io-client: 4.7.4
+      ufo: 1.4.0
+      untyped: 1.4.2
+    transitivePeerDependencies:
+      - bufferutil
+      - rollup
+      - supports-color
+      - utf-8-validate
+    dev: true
+
   /@nuxtjs/color-mode@3.3.2(rollup@3.29.4):
     resolution: {integrity: sha512-BLpBfrYZngV2QWFQ4HNEFwAXa3Pno43Ge+2XHcZJTTa1Z4KzRLvOwku8yiyV3ovIaaXKGwduBdv3Z5Ocdp0/+g==}
     dependencies:
@@ -2756,7 +2757,6 @@ packages:
   /ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
-    requiresBuild: true
     dependencies:
       color-convert: 1.9.3
     dev: true
@@ -3211,7 +3211,6 @@ packages:
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
-    requiresBuild: true
     dependencies:
       color-name: 1.1.3
     dev: true
@@ -3225,7 +3224,6 @@ packages:
 
   /color-name@1.1.3:
     resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
-    requiresBuild: true
     dev: true
 
   /color-name@1.1.4:
@@ -3855,7 +3853,6 @@ packages:
   /escape-string-regexp@1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
-    requiresBuild: true
     dev: true
 
   /escape-string-regexp@5.0.0:
@@ -4236,7 +4233,6 @@ packages:
   /has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
-    requiresBuild: true
     dev: true
 
   /has-flag@4.0.0:
@@ -5934,6 +5930,20 @@ packages:
       - supports-color
     dev: true
 
+  /nuxt-component-meta@0.6.3(rollup@3.29.4):
+    resolution: {integrity: sha512-GdqnSMC1vqabry7WSj3GWA2LZ1gBiWeS2lj943c9TjkL9SN/rABEFXVZA6RO4sOTKF1qV947UGi27PdRd7u+tA==}
+    hasBin: true
+    dependencies:
+      '@nuxt/kit': 3.10.1(rollup@3.29.4)
+      citty: 0.1.5
+      scule: 1.3.0
+      typescript: 5.3.3
+      vue-component-meta: 1.8.27(typescript@5.3.3)
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /nuxt-config-schema@0.4.6(rollup@3.29.4):
     resolution: {integrity: sha512-kHLWJFynj5QrxVZ1MjY2xmDaTSN1BCMLGExA+hMMLoCb3wn9TJlDVqnE/nSdUJPMRkNn/NQ5WP9NLA9vlAXRUw==}
     dependencies:
@@ -7539,7 +7549,6 @@ packages:
   /supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
-    requiresBuild: true
     dependencies:
       has-flag: 3.0.0
     dev: true

@@ -1,3 +1,4 @@
 export default defineNuxtConfig({
-  extends: '@nuxt-themes/alpine'
-})
+  modules: ["@nuxthq/studio"],
+  extends: "@nuxt-themes/alpine",
+});
