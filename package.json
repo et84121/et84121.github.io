@@ -9,7 +9,7 @@
     "preview": "nuxi preview"
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.2",
-    "nuxt": "^3.6.5"
+    "@nuxt-themes/alpine": "^1.6.5",
+    "nuxt": "^3.10.1"
   }
 }
